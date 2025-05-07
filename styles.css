@@ -180,6 +180,7 @@ body {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        position: relative;
     }
     .typing {
         font-size: 40px;
@@ -191,11 +192,18 @@ body {
     .header__description {
         font-size: 15px;
     }
+    .scroll-down {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
     .scroll-down span.material-symbols-outlined {
+        position: static;
         margin-left: 0px;
         margin-top: 30px;
     }
-
 }
 
 /*--- END HEADER SECTION---*/
@@ -525,7 +533,7 @@ body {
 }
 
 .card__back P {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin: auto;
     text-align: left;
     text-justify: inter-word;
@@ -533,7 +541,7 @@ body {
 }
 
 .card__back li {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: left;
     margin: 5px 0;
 }
@@ -557,28 +565,160 @@ body {
 }
 
 /*--MEDIA QUERIES TARJETAS RESPONSIVE--*/
-@media (max-width: 720px) {
-.card__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+
+@media (max-width: 900px) {
+    .card__container,
+    .fila-1,
+    .fila-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 0;
+        margin: 0;
     }
 
-    .card {
-    aspect-ratio: unset;
-    width: 100%;
-    min-width: 400px;
-    min-height: 200px;
-    margin: 0 auto;
+    .card,
+    .card.card--ancha {
+        width: 90%;
+        max-width: 700px;
+        height: auto;
+        aspect-ratio: unset;
+        margin: 0;
+        flex-direction: column;
     }
 
-.card.card--ancha {
-    width: 100%;
-    min-width: 400px;
-    height: 200px;
+    .card__front,
+    .card__back {
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-position: center;
+        padding: 16px;
+    }
+
+    .card__data h3 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .card__back p,
+    .card__back li {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    .card__back ul {
+        padding-left: 20px;
+    }
+
+    .section__title h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .section__card {
+        padding: 30px;
+    }
+
+    .card:hover .card__front,
+    .card:hover .card__back {
+    transform: none;
+    }
+
+    .card__front {
+    transform: none !important;
+    }
+
+    .card__back {
+    position: static;
+    transform: none !important;
+    }
+
+    .fila-1 {
+    margin-bottom: 40px;
     }
 }
+
+@media (max-width: 500px) {
+    
+    .card__container,
+    .fila-1,
+    .fila-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px; 
+        padding: 0;
+        margin: 0;
+    }
+    .fila-1 {
+        margin-bottom: 40px;
+    }
+    .card,
+    .card.card--ancha {
+        width: 90%;
+        max-width: 350px;
+        height: auto;
+        aspect-ratio: unset;
+        margin: 0; /* Ya están centradas con align-items: center */
+        flex-direction: column;
+    }
+
+    /* Caras de la tarjeta */
+    .card__front,
+    .card__back {
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-position: center;
+        padding: 12px;
+    }
+
+
+    .card__data h3 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    /* Texto de la parte trasera */
+    .card__back p,
+    .card__back li {
+        font-size: 1rem;
+        line-height: 1.4;
+        text-align: left;
+    }
+
+    .card__back ul {
+        padding-left: 20px;
+    }
+
+    .section__title h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+
+    .section__card {
+        padding: 20px;
+    }
+
+
+    .card:hover .card__front,
+    .card:hover .card__back {
+        transform: none;
+    }
+
+    .card__front {
+        transform: none !important;
+    }
+
+    .card__back {
+        position: static;
+        transform: none !important;
+    }
+}  
 
 /*-- FIN MEDIA QUERIES TARJETAS RESPONSIVE--*/
 
@@ -623,7 +763,7 @@ body {
 
 /*-- MEDIA QUERIES FOOTER*/
 
-@media (max-width: 720px) {
+@media (max-width: 650px) {
     .footer {
     padding: 40px;
     }
