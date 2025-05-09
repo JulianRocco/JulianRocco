@@ -1,7 +1,6 @@
-Hola, mi nombre es Julian Leonel Rocco. Tengo conocimientos en HTML y CSS, los cuales aplico al desarrollo de páginas web personales y algunos proyectos futuros, siempre desde un enfoque creativo y funcional.
-Aunque cuento con habilidades en el área del desarrollo web, mi verdadera formación está orientada al mundo de la Economía, la Administración y el Comercio Internacional, carrera que actualmente curso a nivel universitario.
-Mi principal objetivo es utilizar el desarrollo web como una herramienta para reflejar y comunicar de manera visual e interactiva los conocimientos que adquiero en el ámbito económico y comercial.
-<!--
+Hello, my name is Julian Leonel Rocco. I have knowledge of HTML and CSS, which I apply to the development of personal websites and some future projects, always with a creative and functional approach.
+Although I have skills in web development, my true academic background is focused on Economics, Business Administration, and International Trade, a field I am currently studying at the university level.
+My main goal is to use web development as a tool to visually and interactively showcase and communicate the knowledge I acquire in the economic and commercial fields.
 **JulianRocco/JulianRocco** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
