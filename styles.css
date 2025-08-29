@@ -533,7 +533,7 @@ body {
 }
 
 .card__back P {
-    font-size: 1.4rem;
+    font-size: 1.rem;
     margin: auto;
     text-align: left;
     text-justify: inter-word;
@@ -782,4 +782,25 @@ body {
     }
 }
 
+.lang-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--bg-darkcolor);
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    z-index: 9999;
+    box-shadow: 2px 2px 10px #0005;
+}
 
+.lang-btn:hover {
+    background-color: var(--bg-lightcolor);
+    color: var(--text-color);
+    transform: scale(1.1);
+}
